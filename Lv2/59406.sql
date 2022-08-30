@@ -1,7 +1,5 @@
--- https://school.programmers.co.kr/learn/courses/30/lessons/59047
--- 이름에 el이 들어가는 동물 찾기
+-- https://school.programmers.co.kr/learn/courses/30/lessons/59406
+-- 동물 수 구하기
 
-SELECT ANIMAL_ID, NAME
+SELECT COUNT(*)
 FROM ANIMAL_INS
-WHERE NAME LIKE '%el%' AND ANIMAL_TYPE = 'Dog'
-ORDER BY NAME
