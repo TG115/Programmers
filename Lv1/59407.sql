@@ -1,6 +1,6 @@
--- https://school.programmers.co.kr/learn/courses/30/lessons/59035
--- 역순 정렬하기
+-- https://school.programmers.co.kr/learn/courses/30/lessons/59407
+-- 이름이 있는 동물의 아이디
 
-SELECT NAME, DATETIME
+SELECT ANIMAL_ID
 FROM ANIMAL_INS
-ORDER BY ANIMAL_ID DESC
+WHERE NAME IS NOT NULL
