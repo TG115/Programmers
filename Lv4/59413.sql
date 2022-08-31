@@ -1,0 +1,19 @@
+-- https://school.programmers.co.kr/learn/courses/30/lessons/59413
+-- 입양 시각 구하기(2)
+
+WITH RECURSIVE HOURS AS (
+    SELECT 0 AS HOUR
+    UNION ALL
+    SELECT HOUR + 1 FROM HOURS
+    WHERE HOUR < 23
+)
+SELECT H.HOUR, IF(O.COUNT > 0, O.COUNT, 0) AS COUNT
+FROM HOURS AS H
+    LEFT JOIN (
+        SELECT HOUR(DATETIME) AS HOUR, COUNT(*) AS COUNT
+        FROM ANIMAL_OUTS
+        GROUP BY HOUR
+        ORDER BY HOUR
+    ) AS O
+    ON H.HOUR = O.HOUR
+ORDER BY H.HOUR
