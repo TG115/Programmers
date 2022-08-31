@@ -2,8 +2,8 @@
 // 로또의 최고 순위와 최저 순위
 
 function solution(lottos, win_nums) {
-    const correct = lottos.filter(l=>win_nums.indexOf(l)>-1).length;
-    const zeros = lottos.filter(l=>l===0).length;
+    const min = lottos.filter(l=>win_nums.indexOf(l)>-1).length;
+    const max = lottos.filter(l=>l===0).length + min;
         
-    return [(correct+zeros)<2?6:7-(correct+zeros), correct<2?6:7-correct];
+    return [max<2?6:7-max, min<2?6:7-min];
 }
