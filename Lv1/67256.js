@@ -6,7 +6,7 @@ function solution(numbers, hand) {
     let K = [1,2,3,4,5,6,7,8,9,'*',0,'#'];
     let L = '*';
     let R = '#';
-    numbers.forEach((n,i) => {
+    numbers.forEach(n => {
         if (n % 3 == 1) {
             answer += 'L';
             L = n;
