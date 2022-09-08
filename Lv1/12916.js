@@ -1,5 +1,5 @@
 // https://programmers.co.kr/learn/courses/30/lessons/12916
-// 문자열 내 p와 y의 개수
+// 문자열 내 p와 y의 개수 
 
 function solution(s){
     var tot = 0;
