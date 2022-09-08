@@ -1,5 +1,5 @@
 // https://programmers.co.kr/learn/courses/30/lessons/12947
-// 하샤드 수
+// 하샤드 수 
 
 function solution(x) {
     var tot = 0;
