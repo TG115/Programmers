@@ -1,5 +1,5 @@
 // https://programmers.co.kr/learn/courses/30/lessons/12901
-// 2016년
+// 2016년 
 
 function solution(a, b) {
     var dow = ['SUN','MON','TUE','WED','THU','FRI','SAT'];
