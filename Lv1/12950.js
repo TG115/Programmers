@@ -1,5 +1,5 @@
 // https://programmers.co.kr/learn/courses/30/lessons/12950
-// 행렬의 덧셈
+// 행렬의 덧셈 
 
 function solution(arr1, arr2) {
     for (var i in arr1) 
