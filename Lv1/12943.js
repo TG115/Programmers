@@ -1,5 +1,5 @@
 // https://programmers.co.kr/learn/courses/30/lessons/12943
-// 콜라츠 추측
+// 콜라츠 추측 
 
 function solution(num) {
     var answer = 0;
